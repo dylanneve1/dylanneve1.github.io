@@ -9,16 +9,19 @@ function setup() {
 }
 
 function draw() {
-  background(51);
+  background(0);
   fill(255);
   // ellipse(width/2,height/2,100,100);
   textAlign(CENTER);
-  textSize(30);
-  text("Welcome to dylanneve1.github.io", width/2, height/4);
+  textSize(width*0.05);
   for (var i = 0; i < drops.length; i++) {
     drops[i].fall();
     drops[i].show();
   }
+  text("Welcome to dylanneve1.github.io", width/2, height/4);
+
+  textSize(width*0.02);
+  text("This site is coded with p5.js", width/2, (height/4)*2);
 }
 
 window.onresize = function() {
