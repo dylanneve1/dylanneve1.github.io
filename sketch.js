@@ -7,7 +7,6 @@ function setup() {
 function draw() {
   background(0);
   fill(255);
-  // ellipse(width/2,height/2,100,100);
   textAlign(CENTER);
   textSize(width*0.05);
   text("Welcome to dylanneve1.github.io", width/2, height/4);
@@ -21,4 +20,4 @@ window.onresize = function() {
   canvas.size(w,h);
   width = w;
   height = h;
-};
+}
