@@ -13,7 +13,7 @@ function draw() {
   textSize(width*0.05);
   text("Welcome to dylanneve1.github.io", width/2, height/4);
   textSize(width*0.02);
-  text("This site is coded with p5.js", width/2, (height/4)*2);
+  text("<p> This site is coded with p5.js, click to ENTER. </p>", width/2, (height/4)*2);
 }
 
 window.onresize = function() {
