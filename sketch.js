@@ -1,18 +1,33 @@
 var canvas;
 var clicks = 0;
 
+var originalTitleY = -100;
+var notYetStopped = true;
+
 function setup() {
   canvas = createCanvas(window.innerWidth, window.innerHeight);
 }
 
 function draw() {
-  background(0);
+
+  if(notYetStopped == true) {
+    background(0);
+  } else if (notYetStopped == false) {
+    background(0,77,64)
+  }
+
+  //background(0);
   fill(255);
   textAlign(CENTER);
   stroke(213,0,0);
   strokeWeight(20);
   textSize(width*0.05);
-  text("Welcome to dylanneve1.github.io", width/2, height/4);
+  if(originalTitleY < height/4) {
+    originalTitleY += 5;
+  } else {
+    notYetStopped = false;
+  }
+  text("Welcome to dylanneve1.github.io", width/2, originalTitleY);
   textSize(width*0.02);
   text("<p> This site is coded with p5.js, click to ENTER. </p>", width/2, (height/4)*2);
   text("You have clicked " + clicks + " times.", width/2, (height/4)*3);
