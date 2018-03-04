@@ -1,6 +1,9 @@
 var canvas;
 var clicks = 0;
 
+var x = 500;
+var y = 500;
+
 function setup() {
   canvas = createCanvas(window.innerWidth, window.innerHeight);
 }
@@ -16,6 +19,10 @@ function draw() {
   textSize(width*0.02);
   text("<p> This site is coded with p5.js, click to ENTER. </p>", width/2, (height/4)*2);
   text("You have clicked " + clicks + " times.", width/2, (height/4)*3);
+  fill(0, 255, 0);
+  // ellipse(x, y, 50, 50);
+  // x += 1;
+
 }
 
 window.onresize = function() {
