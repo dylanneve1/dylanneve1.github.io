@@ -17,7 +17,7 @@ function draw() {
   if(notYetStopped == true) {
     background(0);
   } else if (notYetStopped == false) {
-    background(0,77,64)
+    background(62,39,35);
   }
 
   //background(0);
