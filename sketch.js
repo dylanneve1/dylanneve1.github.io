@@ -1,4 +1,5 @@
 var canvas;
+var clicks = 0;
 
 function setup() {
   canvas = createCanvas(window.innerWidth, window.innerHeight);
@@ -14,6 +15,7 @@ function draw() {
   text("Welcome to dylanneve1.github.io", width/2, height/4);
   textSize(width*0.02);
   text("<p> This site is coded with p5.js, click to ENTER. </p>", width/2, (height/4)*2);
+  text("You have clicked " + clicks + " times.", width/2, (height/4)*3);
 }
 
 window.onresize = function() {
@@ -22,4 +24,8 @@ window.onresize = function() {
   canvas.size(w,h);
   width = w;
   height = h;
+}
+
+function mousePressed() {
+  clicks += 1;
 }
