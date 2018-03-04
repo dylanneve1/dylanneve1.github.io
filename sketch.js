@@ -4,6 +4,10 @@ var clicks = 0;
 var originalTitleY = -100;
 var notYetStopped = true;
 
+var clickerRed = 213;
+var clickerGreen = 0;
+var clickerBlue = 0;
+
 function setup() {
   canvas = createCanvas(window.innerWidth, window.innerHeight);
 }
@@ -30,6 +34,7 @@ function draw() {
   text("Welcome to dylanneve1.github.io", width/2, originalTitleY);
   textSize(width*0.02);
   text("<p> This site is coded with p5.js, click to ENTER. </p>", width/2, (height/4)*2);
+  stroke(clickerRed, clickerGreen, clickerBlue);
   text("You have clicked " + clicks + " times.", width/2, (height/4)*3);
   fill(0, 255, 0);
 }
@@ -44,4 +49,7 @@ window.onresize = function() {
 
 function mousePressed() {
   clicks += 1;
+  clickerRed = random(0, 150);
+  clickerGreen = random(0, 150);
+  clickerBlue = random(0, 150);
 }
