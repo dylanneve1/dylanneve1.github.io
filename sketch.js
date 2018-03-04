@@ -8,6 +8,8 @@ function draw() {
   background(0);
   fill(255);
   textAlign(CENTER);
+  stroke(213,0,0);
+  strokeWeight(20);
   textSize(width*0.05);
   text("Welcome to dylanneve1.github.io", width/2, height/4);
   textSize(width*0.02);
