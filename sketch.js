@@ -1,11 +1,7 @@
 var canvas;
-var drops = [];
 
 function setup() {
   canvas = createCanvas(window.innerWidth, window.innerHeight);
-  for (var i = 0; i < 500; i++) {
-    drops[i] = new Drop();
-  }
 }
 
 function draw() {
@@ -14,12 +10,7 @@ function draw() {
   // ellipse(width/2,height/2,100,100);
   textAlign(CENTER);
   textSize(width*0.05);
-  for (var i = 0; i < drops.length; i++) {
-    drops[i].fall();
-    drops[i].show();
-  }
   text("Welcome to dylanneve1.github.io", width/2, height/4);
-
   textSize(width*0.02);
   text("This site is coded with p5.js", width/2, (height/4)*2);
 }
