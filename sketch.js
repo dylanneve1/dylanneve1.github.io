@@ -2,6 +2,7 @@ var canvas;
 var clicks = 0;
 
 var originalTitleY = -100;
+
 var notYetStopped = true;
 
 var clickerRed = 213;
