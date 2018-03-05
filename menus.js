@@ -9,7 +9,7 @@ function Menus() {
   var clickerRed = 213;
   var clickerGreen = 0;
   var clickerBlue = 0;
-  
+
   var introScreenShow = true;
 
   this.introScreen = function() {
@@ -38,4 +38,10 @@ function Menus() {
     }
   }
 
+  function mousePressed() {
+    clicks += 1;
+    clickerRed = random(0, 150);
+    clickerGreen = random(0, 150);
+    clickerBlue = random(0, 150);
+  }
 }

@@ -18,10 +18,3 @@ window.onresize = function() {
   width = w;
   height = h;
 }
-
-function mousePressed() {
-  clicks += 1;
-  clickerRed = random(0, 150);
-  clickerGreen = random(0, 150);
-  clickerBlue = random(0, 150);
-}
