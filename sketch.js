@@ -18,3 +18,7 @@ window.onresize = function() {
   width = w;
   height = h;
 }
+
+function mousePressed() {
+  menus.update();
+}

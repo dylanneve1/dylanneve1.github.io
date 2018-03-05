@@ -38,7 +38,7 @@ function Menus() {
     }
   }
 
-  function mousePressed() {
+  this.update = function() {
     clicks += 1;
     clickerRed = random(0, 150);
     clickerGreen = random(0, 150);
