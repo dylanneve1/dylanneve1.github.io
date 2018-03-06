@@ -14,11 +14,7 @@ function Intro() {
 
   this.introScreen = function() {
   if(introScreenShow == true) {
-      if(notYetStopped == true) {
-        background(0);
-      } else if (notYetStopped == false) {
-        background(62,39,35);
-      }
+      background(0);
       fill(255);
       clicks += 100000000000000000000;
       textAlign(CENTER);
@@ -30,19 +26,16 @@ function Intro() {
       } else {
         notYetStopped = false;
       }
-      text("Welcome to dylanneve1.github.io", width/2, originalTitleY);
+      text("Welcome to dylanneve1.github.io", width/2, (height/4)*1);
       textSize(width*0.02);
       text("<p> This site is coded with p5.js, click to ENTER. </p>", width/2, (height/4)*2);
       stroke(clickerRed, clickerGreen, clickerBlue);
-      text("You have clicked " + clicks + " times.", width/2, (height/4)*3);
       fill(0, 255, 0);
     }
   }
 
-  this.update = function() {
-    clicks += 1;
-    clickerRed = random(0, 150);
-    clickerGreen = random(0, 150);
-    clickerBlue = random(0, 150);
+  this.end = function() {
+    introScreenShow = false;
+    background(255);
   }
 }

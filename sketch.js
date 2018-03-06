@@ -20,5 +20,5 @@ window.onresize = function() {
 }
 
 function mousePressed() {
-  intro.update();
+  intro.end();
 }
