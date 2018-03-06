@@ -1,5 +1,7 @@
 function Choose() {
 
+  var selected = false;
+
   this.chooseScreen = function() {
     if(showChooseScreen == true) {
       noStroke();
