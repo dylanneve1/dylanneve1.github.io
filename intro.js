@@ -10,8 +10,6 @@ function Intro() {
   var clickerGreen = 0;
   var clickerBlue = 0;
 
-  var introScreenShow = true;
-
   this.introScreen = function() {
   if(introScreenShow == true) {
       background(0);
@@ -36,6 +34,6 @@ function Intro() {
 
   this.end = function() {
     introScreenShow = false;
-    background(255);
+    showChooseScreen = true;
   }
 }

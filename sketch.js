@@ -1,14 +1,20 @@
 var intro;
+var choose;
+
+var showChooseScreen = false;
+var introScreenShow = true;
 
 var canvas;
 
 function setup() {
   intro = new Intro();
+  choose = new Choose();
   canvas = createCanvas(window.innerWidth, window.innerHeight);
 }
 
 function draw() {
   intro.introScreen();
+  choose.chooseScreen();
 }
 
 window.onresize = function() {
