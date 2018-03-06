@@ -15,6 +15,7 @@ function setup() {
 function draw() {
   intro.introScreen();
   choose.chooseScreen();
+  choose.end();
 }
 
 window.onresize = function() {

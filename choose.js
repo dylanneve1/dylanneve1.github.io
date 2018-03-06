@@ -10,4 +10,10 @@ function Choose() {
       text("Nowhere for now lol", width/2, height/2);
     }
   }
+
+  this.end = function() {
+    if(selected == true) {
+      showChooseScreen = false;
+    }
+  }
 }
