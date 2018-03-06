@@ -1,14 +1,14 @@
-var menus;
+var intro;
 
 var canvas;
 
 function setup() {
-  menus = new Menus();
+  intro = new Intro();
   canvas = createCanvas(window.innerWidth, window.innerHeight);
 }
 
 function draw() {
-  menus.introScreen();
+  intro.introScreen();
 }
 
 window.onresize = function() {
@@ -20,5 +20,5 @@ window.onresize = function() {
 }
 
 function mousePressed() {
-  menus.update();
+  intro.update();
 }

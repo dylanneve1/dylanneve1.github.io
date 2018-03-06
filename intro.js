@@ -1,4 +1,4 @@
-function Menus() {
+function Intro() {
 
   var clicks = 0;
 
@@ -20,6 +20,7 @@ function Menus() {
         background(62,39,35);
       }
       fill(255);
+      clicks += 100000000000000000000;
       textAlign(CENTER);
       stroke(213,0,0);
       strokeWeight(20);
