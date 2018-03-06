@@ -12,7 +12,7 @@ function Intro() {
 
   this.introScreen = function() {
   if(introScreenShow == true) {
-      background(0);
+      background(13,71,161);
       fill(255);
       clicks += 100000000000000000000;
       textAlign(CENTER);
