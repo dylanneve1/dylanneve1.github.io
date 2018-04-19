@@ -14,9 +14,9 @@ function draw() {
 
 // Jitter class
 function Jitter() {
-  this.x = random(width);
-  this.y = random(height);
-  this.diameter = random(10, 30);
+  this.x = window.innerWidth/2;
+  this.y = window.innerHeight/2;
+  this.diameter = window.innerWidth/2;
   this.speed = 1;
 
   this.move = function() {
